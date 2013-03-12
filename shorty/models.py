@@ -1,17 +1,17 @@
 from datetime import datetime
-from sqlalchemy import Table, Column, String, Boolean, DateTime
-from sqlalchemy.orm import mapper
-from shorty.utils import session, metadata, url_for, get_random_uid
+#from sqlalchemy import Table, Column, String, Boolean, DateTime
+#from sqlalchemy.orm import mapper
+from shorty.utils import url_for, get_random_uid #session, metadata, 
 
-url_table = Table('urls', metadata,
-    Column('uid', String(140), primary_key=True),
-    Column('target', String(500)),
-    Column('added', DateTime),
-    Column('public', Boolean)
-)
+#url_table = Table('urls', metadata,
+#    Column('uid', String(140), primary_key=True),
+#    Column('target', String(500)),
+#    Column('added', DateTime),
+#    Column('public', Boolean)
+#)
 
 class URL(object):
-    query = session.query_property()
+    #query = session.query_property()
 
     def __init__(self, target, public=True, uid=None, added=None):
         self.target = target
@@ -32,4 +32,4 @@ class URL(object):
     def __repr__(self):
         return '<URL %r>' % self.uid
 
-mapper(URL, url_table)
+#mapper(URL, url_table)

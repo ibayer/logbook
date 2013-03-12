@@ -6,8 +6,8 @@ from werkzeug.local import Local, LocalManager
 from werkzeug.utils import cached_property
 from werkzeug.wrappers import Response
 from werkzeug.routing import Map, Rule
-from sqlalchemy import MetaData
-from sqlalchemy.orm import create_session, scoped_session
+#from sqlalchemy import MetaData
+#from sqlalchemy.orm import create_session, scoped_session
 
 
 TEMPLATE_PATH = path.join(path.dirname(__file__), 'templates')
@@ -19,12 +19,12 @@ local = Local()
 local_manager = LocalManager([local])
 application = local('application')
 
-metadata = MetaData()
+#metadata = MetaData()
 url_map = Map([Rule('/static/<file>', endpoint='static', build_only=True)])
 
-session = scoped_session(lambda: create_session(application.database_engine,
-                                                autocommit=False,
-                                                autoflush=False))
+#session = scoped_session(lambda: create_session(application.database_engine,
+#                                                autocommit=False,
+#                                                autoflush=False))
 jinja_env = Environment(loader=FileSystemLoader(TEMPLATE_PATH))
 
 

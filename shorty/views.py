@@ -1,7 +1,7 @@
 from werkzeug.utils import redirect
 from werkzeug.exceptions import NotFound
-from shorty.utils import session, Pagination, render_template, expose, \
-     validate_url, url_for
+from shorty.utils import Pagination, render_template, expose, \
+     validate_url, url_for #session, 
 from shorty.models import URL
 
 @expose('/')
