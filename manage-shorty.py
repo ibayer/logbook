@@ -2,7 +2,7 @@
 from werkzeug import script
 
 def make_app():
-    from application import Shorty
+    from shorty.application import Shorty
     return Shorty('sqlite:////tmp/shorty.db')
 
 def make_shell():
