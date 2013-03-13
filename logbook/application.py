@@ -2,14 +2,14 @@
 from werkzeug.wrappers import Request
 from werkzeug.wsgi import ClosingIterator, SharedDataMiddleware
 from werkzeug.exceptions import HTTPException, NotFound
-from shorty.utils import STATIC_PATH, url_map, local, local_manager#, \
+from logbook.utils import STATIC_PATH, url_map, local, local_manager#, \
      #metadata, session
 
-import shorty.models
-from shorty import views
+import logbook.models
+from logbook import views
 
 
-class Shorty(object):
+class Logbook(object):
 
     def __init__(self, db_uri):
         local.application = self

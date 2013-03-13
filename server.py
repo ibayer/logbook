@@ -2,11 +2,11 @@
 from werkzeug import script
 
 def make_app():
-    from shorty.application import Shorty
-    return Shorty('sqlite:////tmp/shorty.db')
+    from logbook.application import Logbook 
+    return Logbook('sqlite:////tmp/shorty.db')
 
 def make_shell():
-    from shorty import models, utils
+    from logbook import models, utils
     application = make_app()
     return locals()
 

@@ -2,7 +2,7 @@ from datetime import datetime
 import json
 #from sqlalchemy import Table, Column, String, Boolean, DateTime
 #from sqlalchemy.orm import mapper
-from shorty.utils import url_for, get_random_uid, DATA_PATH  #session, metadata, 
+from logbook.utils import url_for, get_random_uid, DATA_PATH  #session, metadata, 
 
 #url_table = Table('urls', metadata,
 #    Column('uid', String(140), primary_key=True),
