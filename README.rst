@@ -17,3 +17,9 @@ Open a terminal and navigate to the toplevel folder and enter::
     python server.py runserver
 
 Then open http://localhost:5000/ in your web browser.
+
+Your Data
+---------
+You can find your records in::
+
+    /logbook/data/records.json
