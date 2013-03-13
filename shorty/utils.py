@@ -12,13 +12,13 @@ from werkzeug.routing import Map, Rule
 
 TEMPLATE_PATH = path.join(path.dirname(__file__), 'templates')
 STATIC_PATH = path.join(path.dirname(__file__), 'static')
+DATA_PATH = path.join(path.dirname(__file__), 'data/records.json')
 ALLOWED_SCHEMES = frozenset(['http', 'https', 'ftp', 'ftps'])
 URL_CHARS = 'abcdefghijkmpqrstuvwxyzABCDEFGHIJKLMNPQRST23456789'
 
 local = Local()
 local_manager = LocalManager([local])
 application = local('application')
-
 #metadata = MetaData()
 url_map = Map([Rule('/static/<file>', endpoint='static', build_only=True)])
 

@@ -1,7 +1,8 @@
 from datetime import datetime
+import json
 #from sqlalchemy import Table, Column, String, Boolean, DateTime
 #from sqlalchemy.orm import mapper
-from shorty.utils import url_for, get_random_uid #session, metadata, 
+from shorty.utils import url_for, get_random_uid, DATA_PATH  #session, metadata, 
 
 #url_table = Table('urls', metadata,
 #    Column('uid', String(140), primary_key=True),
@@ -32,4 +33,23 @@ class URL(object):
     def __repr__(self):
         return '<URL %r>' % self.uid
 
-#mapper(URL, url_table)
+def save_entry_form(request):
+    file_path = DATA_PATH
+    fileObj = open(file_path, "r")
+    records = []
+    new_record = {}
+    entry_names = ['project', 'p_done', 'date', 'desc', 'tags']
+
+    for entry in entry_names:
+        value = request.form.get(entry)
+        if value:
+            new_record[entry] = value
+
+    try:
+        records = json.load(fileObj)
+    except:
+        pass
+    fileObj.close()
+    fileObj = open(file_path, "w")
+    records.append(new_record)
+    json.dump(records, fileObj, indent=1)

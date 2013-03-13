@@ -2,21 +2,21 @@ from werkzeug.utils import redirect
 from werkzeug.exceptions import NotFound
 from shorty.utils import Pagination, render_template, expose, \
      validate_url, url_for #session, 
-from shorty.models import URL
+from shorty.models import URL, save_entry_form
 
 @expose('/')
 def new(request):
     error = url = ''
     if request.method == 'POST':
-        print('post')
         project = request.form.get('project')
         date = request.form.get('date')
         if not date:
             error = "I'm sorry but entries without date can not be stored"
         if not error:
-            #save entry to records.json here
             if not project:
                 project = "Unknown"
+            #save entry to records.json here
+            save_entry_form(request)
             error = 'Records for Project "' + project + '" have been saved'
             return render_template('new.html', error=error, url=url)
     return render_template('new.html', error=error, url=url)
