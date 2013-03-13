@@ -6,25 +6,17 @@ from werkzeug.local import Local, LocalManager
 from werkzeug.utils import cached_property
 from werkzeug.wrappers import Response
 from werkzeug.routing import Map, Rule
-#from sqlalchemy import MetaData
-#from sqlalchemy.orm import create_session, scoped_session
 
 
 TEMPLATE_PATH = path.join(path.dirname(__file__), 'templates')
 STATIC_PATH = path.join(path.dirname(__file__), 'static')
 DATA_PATH = path.join(path.dirname(__file__), 'data/records.json')
-ALLOWED_SCHEMES = frozenset(['http', 'https', 'ftp', 'ftps'])
-URL_CHARS = 'abcdefghijkmpqrstuvwxyzABCDEFGHIJKLMNPQRST23456789'
 
 local = Local()
 local_manager = LocalManager([local])
 application = local('application')
-#metadata = MetaData()
 url_map = Map([Rule('/static/<file>', endpoint='static', build_only=True)])
 
-#session = scoped_session(lambda: create_session(application.database_engine,
-#                                                autocommit=False,
-#                                                autoflush=False))
 jinja_env = Environment(loader=FileSystemLoader(TEMPLATE_PATH))
 
 
@@ -42,12 +34,6 @@ jinja_env.globals['url_for'] = url_for
 def render_template(template, **context):
     return Response(jinja_env.get_template(template).render(**context),
                     mimetype='text/html')
-
-def validate_url(url):
-    return urlparse(url)[0] in ALLOWED_SCHEMES
-
-def get_random_uid():
-    return ''.join(sample(URL_CHARS, randrange(3, 9)))
 
 
 class Pagination(object):

@@ -1,8 +1,7 @@
 from werkzeug.utils import redirect
 from werkzeug.exceptions import NotFound
-from logbook.utils import Pagination, render_template, expose, \
-     validate_url, url_for #session, 
-from logbook.models import URL, save_entry_form
+from logbook.utils import Pagination, render_template, expose
+from logbook.models import save_entry_form
 
 @expose('/')
 def new(request):

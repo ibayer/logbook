@@ -1,9 +1,8 @@
-#from sqlalchemy import create_engine
 from werkzeug.wrappers import Request
 from werkzeug.wsgi import ClosingIterator, SharedDataMiddleware
 from werkzeug.exceptions import HTTPException, NotFound
-from logbook.utils import STATIC_PATH, url_map, local, local_manager#, \
-     #metadata, session
+from logbook.utils import STATIC_PATH, url_map, local, local_manager
+
 
 import logbook.models
 from logbook import views
@@ -11,16 +10,12 @@ from logbook import views
 
 class Logbook(object):
 
-    def __init__(self, db_uri):
+    def __init__(self):
         local.application = self
-        #self.database_engine = create_engine(db_uri, convert_unicode=True)
 
         self.dispatch = SharedDataMiddleware(self.dispatch, {
             '/static':  STATIC_PATH
         })
-
-    def init_database(self):
-        metadata.create_all(self.database_engine)
 
     def dispatch(self, environ, start_response):
         local.application = self
@@ -36,7 +31,7 @@ class Logbook(object):
         except HTTPException, e:
             response = e
         return ClosingIterator(response(environ, start_response),
-                               [local_manager.cleanup]) #session.remove, 
+                               [local_manager.cleanup])
 
     def __call__(self, environ, start_response):
         return self.dispatch(environ, start_response)

@@ -3,7 +3,7 @@ from werkzeug import script
 
 def make_app():
     from logbook.application import Logbook 
-    return Logbook('sqlite:////tmp/shorty.db')
+    return Logbook()
 
 def make_shell():
     from logbook import models, utils
