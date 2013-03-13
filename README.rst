@@ -12,7 +12,7 @@ Dependencies
 
 Run It
 ------
-Open a terminal and navigate to the toplevel folder and enter:
+Open a terminal and navigate to the toplevel folder and enter::
 
     python server.py runserver
 
