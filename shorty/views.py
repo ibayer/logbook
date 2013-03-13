@@ -8,21 +8,17 @@ from shorty.models import URL
 def new(request):
     error = url = ''
     if request.method == 'POST':
-        url = request.form.get('url')
-        alias = request.form.get('alias')
-        if not validate_url(url):
-            error = "I'm sorry but you cannot shorten this URL."
-        elif alias:
-            if len(alias) > 140:
-                error = 'Your alias is too long'
-            elif '/' in alias:
-                error = 'Your alias might not include a slash'
-            elif URL.query.get(alias):
-                error = 'The alias you have requested exists already'
+        print('post')
+        project = request.form.get('project')
+        date = request.form.get('date')
+        if not date:
+            error = "I'm sorry but entries without date can not be stored"
         if not error:
-            uid = URL(url, 'private' not in request.form, alias).uid
-            session.commit()
-            return redirect(url_for('display', uid=uid))
+            #save entry to records.json here
+            if not project:
+                project = "Unknown"
+            error = 'Records for Project "' + project + '" have been saved'
+            return render_template('new.html', error=error, url=url)
     return render_template('new.html', error=error, url=url)
 
 @expose('/display/<uid>')
