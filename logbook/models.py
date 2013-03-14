@@ -22,3 +22,4 @@ def save_entry_form(request):
     fileObj = open(file_path, "w")
     records.append(new_record)
     json.dump(records, fileObj, indent=1)
+    fileObj.close()
