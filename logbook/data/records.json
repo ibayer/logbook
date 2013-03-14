@@ -1,0 +1,254 @@
+[
+ {
+  "project": "GSoC", 
+  "date": "26.11.2011", 
+  "p_done": 2, 
+  "desc": "Readability counts."
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "21.11.2011", 
+  "p_done": 11, 
+  "desc": "The Zen of Python, by Tim Peters"
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "08.10.2011", 
+  "p_done": 4, 
+  "desc": "Although never is often better than *right* now."
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "15.11.2011", 
+  "p_done": 5, 
+  "desc": "Sparse is better than dense."
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "07.11.2011", 
+  "p_done": 1, 
+  "desc": "Special cases aren't special enough to break the rules."
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "23.11.2011", 
+  "p_done": 8, 
+  "desc": ""
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "31.10.2011", 
+  "p_done": 6, 
+  "desc": "If the implementation is easy to explain, it may be a good idea."
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "22.11.2011", 
+  "p_done": 2, 
+  "desc": "Now is better than never."
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "29.11.2011", 
+  "p_done": 11, 
+  "desc": "Unless explicitly silenced."
+ }, 
+ {
+  "project": "GSoC", 
+  "date": "05.11.2011", 
+  "p_done": 11, 
+  "desc": "Now is better than never."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "16.11.2012", 
+  "p_done": 2, 
+  "desc": "Readability counts."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "30.10.2012", 
+  "p_done": 11, 
+  "desc": "The Zen of Python, by Tim Peters"
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "23.06.2012", 
+  "p_done": 4, 
+  "desc": "Although never is often better than *right* now."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "14.10.2012", 
+  "p_done": 5, 
+  "desc": "Sparse is better than dense."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "19.09.2012", 
+  "p_done": 1, 
+  "desc": "Special cases aren't special enough to break the rules."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "05.11.2012", 
+  "p_done": 8, 
+  "desc": ""
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "29.08.2012", 
+  "p_done": 6, 
+  "desc": "If the implementation is easy to explain, it may be a good idea."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "04.11.2012", 
+  "p_done": 2, 
+  "desc": "Now is better than never."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "25.11.2012", 
+  "p_done": 11, 
+  "desc": "Unless explicitly silenced."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "13.09.2012", 
+  "p_done": 11, 
+  "desc": "Now is better than never."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "20.08.2012", 
+  "p_done": 10, 
+  "desc": "Simple is better than complex."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "01.06.2012", 
+  "p_done": 7, 
+  "desc": "Now is better than never."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "29.08.2012", 
+  "p_done": 5, 
+  "desc": "Now is better than never."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "30.06.2012", 
+  "p_done": 9, 
+  "desc": "In the face of ambiguity, refuse the temptation to guess."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "15.05.2012", 
+  "p_done": 11, 
+  "desc": "Although practicality beats purity."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "14.05.2012", 
+  "p_done": 5, 
+  "desc": "The Zen of Python, by Tim Peters"
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "18.04.2012", 
+  "p_done": 3, 
+  "desc": "Although never is often better than *right* now."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "01.03.2012", 
+  "p_done": 8, 
+  "desc": "Explicit is better than implicit."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "22.08.2012", 
+  "p_done": 5, 
+  "desc": ""
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "17.07.2012", 
+  "p_done": 7, 
+  "desc": "Sparse is better than dense."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "06.10.2012", 
+  "p_done": 2, 
+  "desc": "In the face of ambiguity, refuse the temptation to guess."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "28.11.2012", 
+  "p_done": 5, 
+  "desc": "Simple is better than complex."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "24.06.2012", 
+  "p_done": 9, 
+  "desc": "If the implementation is easy to explain, it may be a good idea."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "23.05.2012", 
+  "p_done": 12, 
+  "desc": "Namespaces are one honking great idea -- let's do more of those!"
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "26.05.2012", 
+  "p_done": 3, 
+  "desc": "Although practicality beats purity."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "09.10.2012", 
+  "p_done": 12, 
+  "desc": "Special cases aren't special enough to break the rules."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "19.04.2012", 
+  "p_done": 1, 
+  "desc": "Beautiful is better than ugly."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "04.10.2012", 
+  "p_done": 4, 
+  "desc": "Sparse is better than dense."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "11.09.2012", 
+  "p_done": 6, 
+  "desc": "Readability counts."
+ }, 
+ {
+  "project": "plos_one_paper", 
+  "date": "30.10.2012", 
+  "p_done": 1, 
+  "desc": "Sparse is better than dense."
+ }, 
+ {
+  "project": "bayes_modelling", 
+  "date": "31.12.2012", 
+  "p_done": 2, 
+  "desc": "Readability counts."
+ }, 
+ {
+  "project": "bayes_modelling", 
+  "date": "29.12.2012", 
+  "p_done": 11, 
+  "desc": "The Zen of Python, by Tim Peters"
+ }
+]
